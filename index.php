@@ -16,7 +16,7 @@ if(isset($_POST['valueSearch'])){
   
   
   
-  $sql= "SELECT * FROM `announces` WHERE `price` >= $priceMin   AND `price` <= $priceMax  AND `type`  LIKE '$type' ";
+  $sql= "SELECT * FROM `announces` WHERE `price` >= $priceMin   AND `price` <= $priceMax  AND `type`  = '$type' ";
   
   $statement = $conn->query($sql);
   
